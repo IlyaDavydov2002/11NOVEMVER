@@ -2,21 +2,21 @@
 #include <vector>
 using namespace std;
 int main() {
-	vector<int> v;
-	int i;
-	while (cin >> i, i != 0) {
-		v.push_back(i);
+	vector<int> x;
+	int n;
+	while (cin >> n, n != 0) {
+		.push_back(n);
 	}
-	for (auto &i : v) {
-		int n = 2, num = 0;
-		while (n < i) {
-			if (i % n == 0) {
-				num++;
+	for (auto &n : x) {
+		int k = 2, nm = 0;
+		while (k < n) {
+			if (n % k == 0) {
+				nm++;
 			}
-			n++;
+			++;
 			}
-		if (num >= 5) {
-				cout << i << " ";
+		if (nm >= 5) {
+				cout << n << " ";
 		}
 	}
 	return 0;
